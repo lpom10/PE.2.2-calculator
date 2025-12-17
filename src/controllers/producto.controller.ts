@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import { ProductoRepository } from '../repositories/producto.repository';
-import { productoSchema } from '../schemas/producto.schema';
+import { ProductoRepository } from '../repositories/producto.repository.js';
+import { productoSchema } from '../schemas/producto.schema.js';
 
 const repository = new ProductoRepository();
 

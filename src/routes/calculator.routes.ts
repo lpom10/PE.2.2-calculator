@@ -13,6 +13,7 @@ export async function calculatorRoutes(fastify: FastifyInstance) {
     fastify.post<{ Body: CalculatorRequest }>(
         '/tools/calculator', //especifica ruta
         {
+            onRequest: [(fastify as any).authenticate], //middleware de autenticación
             schema: {
                 description: 'Ejecutar operaciones aritméticas ',
                 tags: ["calculator"],
