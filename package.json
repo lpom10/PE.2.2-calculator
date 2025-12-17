@@ -4,14 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node src/index.ts",
-    "test": "jest"
+    "dev": " tsx watch src/index.ts",
+    "test": "jest",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "LUis pOma",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@fastify/cookie": "^11.0.2",
+    "@fastify/helmet": "^13.0.2",
+    "@fastify/jwt": "^10.0.0",
+    "@fastify/oauth2": "^8.1.2",
+    "@fastify/rate-limit": "^10.3.0",
     "@fastify/swagger": "^9.6.1",
     "@fastify/swagger-ui": "^5.2.3",
     "express": "^5.2.1",
@@ -19,12 +26,12 @@
     "zod": "^4.1.13"
   },
   "devDependencies": {
+    "@types/express": "^5.0.6",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.10.2",
     "jest": "^30.2.0",
-    "nodemon": "^3.1.11",
     "ts-jest": "^29.4.6",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.9.3"
   }
 }

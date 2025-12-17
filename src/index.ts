@@ -3,6 +3,10 @@ import Fastify from 'fastify'
 import { calculatorRoutes } from './routes/calculator.routes'
 import swagger from '@fastify/swagger'
 import swaggerUi from '@fastify/swagger-ui'
+import cookie from '@fastify/cookie'
+import helmet from '@fastify/helmet'
+
+import { openapiDocument } from "./docs/openapi";
 
 
 const fastify = Fastify({
@@ -11,23 +15,47 @@ const fastify = Fastify({
 
 const PORT = 3000;
 
-// Configurar Swagger
-fastify.register(swagger, {
-  openapi: {
-    info: {
-      title: 'Calculator API',
-      description: 'API para realizar operaciones aritméticas básicas',
-      version: '1.0.0'
-    },
-    servers: [
-      { 
-        url: 'http://localhost:3000', 
-        description: 'Servidor local' 
-      }
-    ],
-    tags: [{ name: 'calculator', description: 'Operaciones de calculadora' }]
-  }  
+// almacenar las sesiones de nuestra autenticacion
+fastify.register(cookie,{
+  secret: process.env.COOKIE_SECRET,
+  parseOptions: {}
+})
+
+// configurar un middleware de seguridad  - helment
+//fastify.register(helmet, {
+//  contentSecurityPolicy: {
+//    directives: {
+//      default:'self',
+//      styleSrc: ["'self'"],
+//    } 
+//  }
+//})
+fastify.register(helmet, {
+  contentSecurityPolicy: false
 });
+
+
+// Configurar Swagger
+//fastify.register(swagger, {
+ // openapi: {
+  //  info: {
+   //   title: 'Calculator API',
+    //  description: 'API para realizar operaciones aritméticas básicas',
+     // version: '1.0.0'
+    //},
+    //servers: [
+     // { 
+      //  url: 'http://localhost:3000', 
+       // description: 'Servidor local' 
+      //}
+    //],
+    //tags: [{ name: 'calculator', description: 'Operaciones de calculadora' }]
+  //}  
+//});
+fastify.register(swagger, {
+  openapi: openapiDocument
+});
+
 
 fastify.register(swaggerUi,{
   routePrefix: '/docs',
@@ -55,4 +83,7 @@ const start = async () => {
         process.exit(1);
     }
 };
+
+
+
 start()

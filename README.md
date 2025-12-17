@@ -1,3 +1,21 @@
+- MCP Calculator API – Documentación OpenAPI -
+
+- Descripción
+Esta práctica corresponde a la actividad de trabajo autónomo sobre
+documentación OpenAPI, versionado y seguridad del proyecto PE-2.2.
+
+- Documentación OpenAPI
+Swagger disponible en:
+http://localhost:3000/docs
+
+
+- Evidencias
+[Imagen de captura 1; servidor corriendo ] ("![img/sawgger.png](https://github.com/lpom10/PE.2.2-calculator/blob/8ccf9b16b87de108a8ed183dbe3b269dd6ca5a7b/img/holaMundo.png)")
+[Imagen de captura 1; consola en ejecución ] ("![img/pract.png](https://github.com/lpom10/PE.2.2-calculator/blob/8ccf9b16b87de108a8ed183dbe3b269dd6ca5a7b/img/holaMundo.png)")
+
+
+
+practica 1
 [Imagen de captura 1; primer GET realizado ] ("![img/holaMundo.png](https://github.com/lpom10/PE.2.2-calculator/blob/8ccf9b16b87de108a8ed183dbe3b269dd6ca5a7b/img/holaMundo.png)")
 [Imagen de captura 2; operación SUMA ] ("![img/add.png](https://github.com/lpom10/PE.2.2-calculator/blob/8ccf9b16b87de108a8ed183dbe3b269dd6ca5a7b/img/add.png)")
 [Imagen de captura 3; operación MULTIPLICACION] ("![img/multiply.png](https://github.com/lpom10/PE.2.2-calculator/blob/8ccf9b16b87de108a8ed183dbe3b269dd6ca5a7b/img/multiply.png)")

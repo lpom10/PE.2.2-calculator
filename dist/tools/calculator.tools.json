@@ -1,0 +1,23 @@
+{
+    "name": "calculator",
+    "description": "Realiza operaciones aritmeticas basicas",
+    "inputSchema": {
+        "type": "object",
+        "properties": {
+            "operation": {
+                "type": "string",
+                "enum": ["add", "substract", "multiply", "divide"]
+            },
+            "a": {
+                "type": "number",
+                "description": "primer operando"
+            },
+            "b": {
+                "type": "number",
+                "description": "segundo operando"
+            }
+        },
+        "required": ["operation", "a", "b"],
+        "additionalProperties": false
+    }
+}
