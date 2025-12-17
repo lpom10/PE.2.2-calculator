@@ -10,8 +10,8 @@ http://localhost:3000/docs
 
 
 - Evidencias
-[Imagen de captura 1; servidor corriendo ] ("![img/sawgger.png](https://github.com/lpom10/PE.2.2-calculator/blob/8ccf9b16b87de108a8ed183dbe3b269dd6ca5a7b/img/holaMundo.png)")
-[Imagen de captura 1; consola en ejecución ] ("![img/pract.png](https://github.com/lpom10/PE.2.2-calculator/blob/8ccf9b16b87de108a8ed183dbe3b269dd6ca5a7b/img/holaMundo.png)")
+[Imagen de captura 1; servidor corriendo ] ("![img/sawgger.png](https://github.com/lpom10/PE.2.2-calculator/blob/7c823cb74dfc98e3f85dcc703149445aff426dc8/img/sawgger.png)")
+[Imagen de captura 1; consola en ejecución ] ("![img/pract.png](https://github.com/lpom10/PE.2.2-calculator/blob/7c823cb74dfc98e3f85dcc703149445aff426dc8/img/pract.png)")
 
 
 
